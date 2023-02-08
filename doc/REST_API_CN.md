@@ -96,6 +96,22 @@ post
     "time":"2023-02-08 15:48:43"
 }
 ```
+**请求参数说明**
+
+|返回字段|字段说明|
+|--------| :-------: |
+|txHash| 交易hash  通过txHash做唯一索引，支持重复上报|
+|identifier| 链 |
+|partnerId| 合作商id |
+|productId| 商品id |
+|payContractAddress| 支付合约地址 0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee为主链币|
+|payContractSymbol| 支付合约币种 |
+|payAmount| 支付数量 |
+|buyUserAddress| 购买地址 |
+|partnerIncomeAddress| 合作商收款地址 |
+|systemIncomeAddress| 系统收款地址 |
+|ratio| 分成比例 |
+|time| 交易时间 |
 
 **响应**
 ```javascript
