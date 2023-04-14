@@ -31,18 +31,22 @@ https://api.gopluseco.io/api/v1/market/buy?partnerId=1&chain=ETH&pageNum=1&pageS
         "totalCount":5,
         "list":[
         {
-            "txHash":"0xc43293159cea1ba0c711c51aa40094893c087412fa52addde10b5e3d7f983392",
-            "identifier":"ETH",
-            "partnerId":"1",
-            "productId":"167",
-            "payContractAddress":"0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
-            "payContractSymbol":"ETH",
-            "payAmount":0.001,
-            "buyUserAddress":"0xed69c7a8bffc861d3d818ccd41427a01c336f8b2",
-            "partnerIncomeAddress":"0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
-            "systemIncomeAddress":"0x165a57869231636176c25d0eef1a8b2cc73ab209",
-            "ratio":0.5,
-            "time":"2023-02-08 15:48:43"
+            "txHash": "0x2f6ff9d339c1040dd717882a0fb9a9d7bfb2b8104fe03be6adf4f6bba5bb415a",
+            "identifier": "ETH",
+            "partnerId": "1",
+            "productId": "167",
+            "payContractAddress": "0x8d8bad32025076acfd59f030f162ab075c58b7cc",
+            "payContractSymbol": "USDT",
+            "payAmount": 9.9000000000000000,
+            "buyUserAddress": "0x5ff8e5c3f5a318ed8c68423aa78d77f922b38f19",
+            "partnerIncomeAddress": "0xf12a705969474175fc984d7d24a428294ce01a81",
+            "systemIncomeAddress": "0x165a57869231636176c25d0eef1a8b2cc73ab209",
+            "ratio": 0.7000,
+            "time": "2023-04-14 01:20:04",
+            "buyDays": 1,
+            "expiresTime": 1684165524,
+            "isAuto": "Y",
+            "autoPayStop": "N"
         }
     ]
 }
@@ -65,6 +69,10 @@ https://api.gopluseco.io/api/v1/market/buy?partnerId=1&chain=ETH&pageNum=1&pageS
 |systemIncomeAddress| 系统收款地址 |
 |ratio| 分成比例 |
 |time| 交易时间 |
+|buyDays| 购买天数 |
+|expiresTime| 过期时间 |
+|isAuto| 是否自动续费 |
+|autoPayStop| 停止自动续费 |
 
 
 
@@ -82,18 +90,22 @@ post
 ###  参数
 ```javascript
 {
-    "txHash":"0xc43293159cea1ba0c711c51aa40094893c087412fa52addde10b5e3d7f983392",
-    "identifier":"ETH",
-    "partnerId":"1",
-    "productId":"167",
-    "payContractAddress":"0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
-    "payContractSymbol":"ETH",
-    "payAmount":0.001,
-    "buyUserAddress":"0xed69c7a8bffc861d3d818ccd41427a01c336f8b2",
-    "partnerIncomeAddress":"0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
-    "systemIncomeAddress":"0x165a57869231636176c25d0eef1a8b2cc73ab209",
-    "ratio":0.5,
-    "time":"2023-02-08 15:48:43"
+    "txHash": "0x2f6ff9d339c1040dd717882a0fb9a9d7bfb2b8104fe03be6adf4f6bba5bb415a",
+        "identifier": "ETH",
+        "partnerId": "1",
+        "productId": "167",
+        "payContractAddress": "0x8d8bad32025076acfd59f030f162ab075c58b7cc",
+        "payContractSymbol": "USDT",
+        "payAmount": 9.9000000000000000,
+        "buyUserAddress": "0x5ff8e5c3f5a318ed8c68423aa78d77f922b38f19",
+        "partnerIncomeAddress": "0xf12a705969474175fc984d7d24a428294ce01a81",
+        "systemIncomeAddress": "0x165a57869231636176c25d0eef1a8b2cc73ab209",
+        "ratio": 0.7000,
+        "time": "2023-04-14 01:20:04",
+        "buyDays": 1,
+        "expiresTime": 1684165524,
+        "isAuto": "Y",
+        "autoPayStop": "N"
 }
 ```
 **请求参数说明**
@@ -112,6 +124,10 @@ post
 |systemIncomeAddress| 系统收款地址 |
 |ratio| 分成比例 |
 |time| 交易时间 |
+|buyDays| 购买天数 |
+|expiresTime| 过期时间 |
+|isAuto| 是否自动续费 |
+|autoPayStop| 停止自动续费 |
 
 **响应**
 ```javascript
